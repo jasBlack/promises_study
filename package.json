@@ -1,0 +1,27 @@
+{
+  "name": "promises_study",
+  "version": "1.0.0",
+  "description": "Slef study of promises using q.js",
+  "main": "none",
+  "dependencies": {
+    "q": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasBlack/promises_study.git"
+  },
+  "keywords": [
+    "promises",
+    "example"
+  ],
+  "author": "Jb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasBlack/promises_study/issues"
+  },
+  "homepage": "https://github.com/jasBlack/promises_study"
+}
