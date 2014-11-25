@@ -4,7 +4,9 @@
   "description": "Slef study of promises using q.js",
   "main": "none",
   "dependencies": {
-    "q": "^1.1.1"
+    "q": "^1.1.1",
+    "request": "^2.48.0",
+    "xmlhttprequest": "^1.6.0"
   },
   "devDependencies": {},
   "scripts": {
