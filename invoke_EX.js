@@ -5,17 +5,19 @@ function doesntReturnPromise() {
 }
 
 function itReturnPromise() {
- // return Q.promise(function(resolve){resolve("this is a promise")}); 
-  var prom=  Q.defer();
+  var prom = Q.defer();
   prom.resolve("this is a promise");
-  return prom.promise;
+  return prom.promise
 }
 
 function performPromiseOp(method) {
-  Q.invoke(method).then(function(value) {console.log(value)});
-}
-//This is not a promise
+    Q.invoke(method).then(function resolved(value) {
+      console.log(value)
+    }, function rejected(error) {
+      console.log(error);
+    });
+  }
+  //This is not a promise
 performPromiseOp(doesntReturnPromise);
-
 //This is a promise
 performPromiseOp(itReturnPromise);
